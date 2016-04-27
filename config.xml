@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.tixy.barcodedemo”
+        id        = "com.phonegap.ryanw.barcodedemo"
         version   = "2.0.0">
     <name>Scanner Demo</name>
 
@@ -17,6 +17,10 @@
     <gap:plugin name="com.valet-manager.lineaprocdv"/>
 
     <feature name="http://api.phonegap.com/1.0/device" />
+    <feature name="debug-server" required="true">
+       <param name="domain" value="http://debug.phonegap.com"/>
+       <param name="key" value="willoughby"/>
+    </feature>
 
     <preference name="phonegap-version" value="3.6.3" />
     <preference name="orientation"      value="default" />
